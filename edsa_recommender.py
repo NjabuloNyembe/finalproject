@@ -153,14 +153,14 @@ def main():
                '
             )
             st.info('Movie Production Trend')
-            st.image('EDA_files\Productionyears.png')
+            st.image('EDA_files/Productionyears.png')
             st.markdown(
                 'The year 1995 has the highest number of movies released in the dataset'
                 )
 
             st.info('Prominent Genres & Movie Types')
-            st.image('EDA_files\Prominentgenres.png')
-            st.image('EDA_files\Popgen.png')
+            st.image('EDA_files/Prominentgenres.png')
+            st.image('EDA_files/Popgen.png')
             st.markdown(
                 'Drama is the most popular genre in the dataset\
                  it would be expected to have a bigger weight on the outcome of\
@@ -169,8 +169,8 @@ def main():
                 )
 
             st.info('Rating Tendecies Across All Genres')
-            st.image('EDA_files\Popularratings.png')
-            st.image('EDA_files\Poprat.png')
+            st.image('EDA_files/Popularratings.png')
+            st.image('EDA_files/Poprat.png')
             st.markdown(
                 'We can see that the majority of movies ratings are between 3.0 to 5.\
                  with most ratings falling in 3.0,4.0,5.0\
@@ -183,14 +183,14 @@ def main():
             
 
             st.info('Popular Actors')
-            st.image('recommenders\Resources\imgs\actors.png')
+            st.image('EDA_files/Popact.png')
             st.markdown(
                 'Samuel L. Jackson is the most featured actor in the database followed by Steve Buscemi\
                  as such we expect an affiliation with these top actors in the overall recommentation choices.\
                 ')
 
             st.info('Popular Movie Directors')
-            st.image('EDA_files\Popdir.png')
+            st.image('EDA_files/Popdir.png')
             st.markdown(
                 '- The phrase "See full Summary" appears the most under featured Director\
                  - Both Woody Allen and Luc Besson are featured 26 times in the dataset\
@@ -198,7 +198,7 @@ def main():
                 )
 
             st.info('Popular Movie Plots')
-            st.image('recommenders\Resources\imgs\directors.png')
+            st.image('recommenders/Resources/imgs/directors.png')
             st.markdown( 
                 '**rated F** and **female nudity** are the most popular movie plots in the dataset'                                                                                                                      
                 )
@@ -223,9 +223,9 @@ def main():
                   )
                   
             st.info('Movies dataset')
-            st.dataframe(pd.read_csv('resources\data\movies.csv'))
+            st.dataframe(pd.read_csv('resources/data/movies.csv'))
             st.info('Ratings dataset')
-            st.dataframe(pd.read_csv('resources\data\Latings.csv'))
+            st.dataframe(pd.read_csv('resources/data/Latings.csv'))
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
 
