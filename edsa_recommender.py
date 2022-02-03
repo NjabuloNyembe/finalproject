@@ -140,7 +140,7 @@ def main():
         )
 
    
-        options=['Exploratory Data Analysis',"Recomender Models",'Resources','Raw Data']
+        options=['Exploratory Data Analysis','Raw Data']
         navigator=st.radio('Select and navigate to the relevant page for discriptions',options)
 
         if navigator=='Exploratory Data Analysis':
@@ -198,7 +198,7 @@ def main():
                 )
 
             st.info('Popular Movie Plots')
-            st.image('recommenders/Resources/imgs/directors.png')
+            st.image('EDA_files/Popplots.png')
             st.markdown( 
                 '**rated F** and **female nudity** are the most popular movie plots in the dataset'                                                                                                                      
                 )
